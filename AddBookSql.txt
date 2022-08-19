@@ -111,3 +111,30 @@ mysql> SELECT * FROM address_book WHERE State = 'Andhra Pradesh';
 | Ravi       | Janu      | Vja     | Vijayawada | Andhra Pradesh |   520152 |     91000459 | avikajanu@gmail.com |
 +------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
 1 row in set (0.00 sec)
+
+
+UC 7:
+
+mysql> SELECT COUNT(First_name) FROM address_book WHERE City = 'Vizag' OR State = 'Goa';
++-------------------+
+| COUNT(First_name) |
++-------------------+
+|                 2 |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(First_name) FROM address_book WHERE City = 'Vizag';
++-------------------+
+| COUNT(First_name) |
++-------------------+
+|                 1 |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(First_name) FROM address_book WHERE State = 'AP';
++-------------------+
+| COUNT(First_name) |
++-------------------+
+|                 1 |
++-------------------+
+1 row in set (0.00 sec)
