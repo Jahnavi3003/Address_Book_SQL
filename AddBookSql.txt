@@ -214,3 +214,21 @@ mysql> SELECT COUNT(First_name) FROM address_book WHERE Type = 'Family';
 |                 2 |
 +-------------------+
 1 row in set (0.00 sec)
+
+
+UC 11:
+
+mysql> INSERT INTO address_book VALUES('Lokesh','Bakki','Brampton','Ontario','Canada',400005,1845875,'ammabaapu@gmail.com','Family');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT * FROM address_book;
++------------+-----------+----------+------------+----------------+----------+--------------+---------------------+------------+
+| First_name | Last_name | Address  | City       | State          | Zip_code | Phone_number | Email               | Type       |
++------------+-----------+----------+------------+----------------+----------+--------------+---------------------+------------+
+| Ravi       | Janu      | Vja      | Vijayawada | Andhra Pradesh |   520152 |     91000459 | avikajanu@gmail.com | Family     |
+| Chandru    | buddi     | vzp      | Vizag      | AP             |   510254 |      9425015 | hjhbnnsj@gmail.com  | Friends    |
+| Gammu      | Moti      | gigar    | Panaji     | Goa            |   512402 |     75215844 | disney@gmail.com    | Family     |
+| Jack       | Fruit     | Park     | Pune       | Africa         |   400002 |        85412 | tarzan@gmail.com    | Profession |
+| Lokesh     | Bakki     | Brampton | Ontario    | Canada         |   400005 |      1845875 | ammabaapu@gmail.com | Family     |
++------------+-----------+----------+------------+----------------+----------+--------------+---------------------+------------+
+5 rows in set (0.00 sec)
