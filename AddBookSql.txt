@@ -138,3 +138,19 @@ mysql> SELECT COUNT(First_name) FROM address_book WHERE State = 'AP';
 |                 1 |
 +-------------------+
 1 row in set (0.00 sec)
+
+UC 8:
+
+mysql> INSERT INTO address_book VALUES('Jack','Fruit','Park','Pune','Africa','400002','85412','tarzan@gmail.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT * FROM address_book ORDER BY City ASC;
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
+| First_name | Last_name | Address | City       | State          | Zip_code | Phone_number | Email               |
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
+| Gammu      | Moti      | gigar   | Panaji     | Goa            |   512402 |     75215844 | disney@gmail.com    |
+| Jack       | Fruit     | Park    | Pune       | Africa         |   400002 |        85412 | tarzan@gmail.com    |
+| Ravi       | Janu      | Vja     | Vijayawada | Andhra Pradesh |   520152 |     91000459 | avikajanu@gmail.com |
+| Chandru    | buddi     | vzp     | Vizag      | AP             |   510254 |      9425015 | hjhbnnsj@gmail.com  |
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
+4 rows in set (0.00 sec)
