@@ -46,3 +46,21 @@ mysql> describe address_book;
 | Email        | varchar(50)  | YES  |     | NULL    |       |
 +--------------+--------------+------+-----+---------+-------+
 8 rows in set (0.00 sec)
+
+
+UC 3:
+
+mysql> INSERT INTO address_book VALUES('Ravi','Janu','Vja','Vijayawada','AP','520152','91000459','avikajanu@gmail.com');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO address_book VALUES('Chandru','buddi','vzp','Vizag','AP','510254','9425015','hjhbnnsj@gmail.com');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT * FROM address_book;
++------------+-----------+---------+------------+-------+----------+--------------+---------------------+
+| First_name | Last_name | Address | City       | State | Zip_code | Phone_number | Email               |
++------------+-----------+---------+------------+-------+----------+--------------+---------------------+
+| Ravi       | Janu      | Vja     | Vijayawada | AP    |   520152 |     91000459 | avikajanu@gmail.com |
+| Chandru    | buddi     | vzp     | Vizag      | AP    |   510254 |      9425015 | hjhbnnsj@gmail.com  |
++------------+-----------+---------+------------+-------+----------+--------------+---------------------+
+2 rows in set (0.00 sec)
