@@ -188,3 +188,29 @@ mysql> SELECT * FROM address_book;
 +------------+-----------+---------+------------+----------------+----------+--------------+---------------------+------------+
 4 rows in set (0.00 sec)
 
+
+UC 10:
+
+mysql> SELECT COUNT(First_name) FROM address_book WHERE Type = 'Profession';
++-------------------+
+| COUNT(First_name) |
++-------------------+
+|                 1 |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(First_name) FROM address_book WHERE Type = 'Friends';
++-------------------+
+| COUNT(First_name) |
++-------------------+
+|                 1 |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(First_name) FROM address_book WHERE Type = 'Family';
++-------------------+
+| COUNT(First_name) |
++-------------------+
+|                 2 |
++-------------------+
+1 row in set (0.00 sec)
