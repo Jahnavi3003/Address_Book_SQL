@@ -79,3 +79,17 @@ mysql> SELECT * FROM address_book;
 | Chandru    | buddi     | vzp     | Vizag      | AP             |   510254 |      9425015 | hjhbnnsj@gmail.com  |
 +------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
 2 rows in set (0.00 sec)
+
+
+UC 5:
+
+mysql> DELETE FROM address_book WHERE First_name = 'Chandru';
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT * FROM address_book;
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
+| First_name | Last_name | Address | City       | State          | Zip_code | Phone_number | Email               |
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
+| Ravi       | Janu      | Vja     | Vijayawada | Andhra Pradesh |   520152 |     91000459 | avikajanu@gmail.com |
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
+1 row in set (0.00 sec)
