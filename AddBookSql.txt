@@ -154,3 +154,37 @@ mysql> SELECT * FROM address_book ORDER BY City ASC;
 | Chandru    | buddi     | vzp     | Vizag      | AP             |   510254 |      9425015 | hjhbnnsj@gmail.com  |
 +------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
 4 rows in set (0.00 sec)
+
+UC 9:
+
+mysql> ALTER TABLE address_book ADD Type varchar(50);
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> UPDATE address_book SET Type = 'Family' WHERE First_name = 'Ravi';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE address_book SET Type = 'Family' WHERE First_name = 'Gammu';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE address_book SET Type = 'Friends' WHERE First_name = 'Chandru';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE address_book SET Type = 'Profession' WHERE First_name = 'Jack';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT * FROM address_book;
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+------------+
+| First_name | Last_name | Address | City       | State          | Zip_code | Phone_number | Email               | Type       |
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+------------+
+| Ravi       | Janu      | Vja     | Vijayawada | Andhra Pradesh |   520152 |     91000459 | avikajanu@gmail.com | Family     |
+| Chandru    | buddi     | vzp     | Vizag      | AP             |   510254 |      9425015 | hjhbnnsj@gmail.com  | Friends    |
+| Gammu      | Moti      | gigar   | Panaji     | Goa            |   512402 |     75215844 | disney@gmail.com    | Family     |
+| Jack       | Fruit     | Park    | Pune       | Africa         |   400002 |        85412 | tarzan@gmail.com    | Profession |
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+------------+
+4 rows in set (0.00 sec)
+
