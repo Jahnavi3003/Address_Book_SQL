@@ -19,3 +19,30 @@ mysql> SHOW DATABASES;
 
 mysql> USE address_book;
 Database changed
+
+UC 2:
+
+mysql> CREATE TABLE address_book(First_name varchar(50),
+    ->      Last_name varchar(50),
+    ->      Address varchar(150),
+    ->      City varchar(50),
+    ->      State varchar(50),
+    ->      Zip_code int,
+    ->      Phone_number int,
+    ->      Email varchar(50));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> describe address_book;
++--------------+--------------+------+-----+---------+-------+
+| Field        | Type         | Null | Key | Default | Extra |
++--------------+--------------+------+-----+---------+-------+
+| First_name   | varchar(50)  | YES  |     | NULL    |       |
+| Last_name    | varchar(50)  | YES  |     | NULL    |       |
+| Address      | varchar(150) | YES  |     | NULL    |       |
+| City         | varchar(50)  | YES  |     | NULL    |       |
+| State        | varchar(50)  | YES  |     | NULL    |       |
+| Zip_code     | int          | YES  |     | NULL    |       |
+| Phone_number | int          | YES  |     | NULL    |       |
+| Email        | varchar(50)  | YES  |     | NULL    |       |
++--------------+--------------+------+-----+---------+-------+
+8 rows in set (0.00 sec)
