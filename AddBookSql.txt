@@ -64,3 +64,18 @@ mysql> SELECT * FROM address_book;
 | Chandru    | buddi     | vzp     | Vizag      | AP    |   510254 |      9425015 | hjhbnnsj@gmail.com  |
 +------------+-----------+---------+------------+-------+----------+--------------+---------------------+
 2 rows in set (0.00 sec)
+
+UC 4:
+
+mysql> UPDATE address_book SET state = 'Andhra Pradesh' where First_name = 'Ravi';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT * FROM address_book;
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
+| First_name | Last_name | Address | City       | State          | Zip_code | Phone_number | Email               |
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
+| Ravi       | Janu      | Vja     | Vijayawada | Andhra Pradesh |   520152 |     91000459 | avikajanu@gmail.com |
+| Chandru    | buddi     | vzp     | Vizag      | AP             |   510254 |      9425015 | hjhbnnsj@gmail.com  |
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
+2 rows in set (0.00 sec)
