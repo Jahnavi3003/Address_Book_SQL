@@ -93,3 +93,21 @@ mysql> SELECT * FROM address_book;
 | Ravi       | Janu      | Vja     | Vijayawada | Andhra Pradesh |   520152 |     91000459 | avikajanu@gmail.com |
 +------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
 1 row in set (0.00 sec)
+
+UC 6:
+
+mysql> SELECT * FROM address_book WHERE City = 'Vijayawada';
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
+| First_name | Last_name | Address | City       | State          | Zip_code | Phone_number | Email               |
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
+| Ravi       | Janu      | Vja     | Vijayawada | Andhra Pradesh |   520152 |     91000459 | avikajanu@gmail.com |
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM address_book WHERE State = 'Andhra Pradesh';
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
+| First_name | Last_name | Address | City       | State          | Zip_code | Phone_number | Email               |
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
+| Ravi       | Janu      | Vja     | Vijayawada | Andhra Pradesh |   520152 |     91000459 | avikajanu@gmail.com |
++------------+-----------+---------+------------+----------------+----------+--------------+---------------------+
+1 row in set (0.00 sec)
